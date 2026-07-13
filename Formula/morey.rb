@@ -7,22 +7,22 @@ class Morey < Formula
   on_macos do
     on_arm do
       url "https://seawater.io/releases/morey-0.2.0-darwin-arm64.tar.gz"
-      sha256 "cb16dabc547d06aafc404999b56c732c86f8aae42bed208c9856125b5fc0ad71"
+      sha256 "9774fba1374c03c590772530c149ec1f77ba5049151532c69cc14632bacf11d4"
     end
     on_intel do
       url "https://seawater.io/releases/morey-0.2.0-darwin-x86_64.tar.gz"
-      sha256 "0608c639c1f21735261aa613f14d28d87fdd6e6b11ff1cef2e12e42a85a52973"
+      sha256 "00cd8f4c0e38f452aba9a66d8f3a8e88276056cef8de1e239a7d0b415e9174b3"
     end
   end
 
   on_linux do
     on_arm do
       url "https://seawater.io/releases/morey-0.2.0-linux-arm64.tar.gz"
-      sha256 "3b51b09201dfa07cb605cef3812cfca2d464e8a1dc28716b464b049580c3019d"
+      sha256 "bcfd6d3dcee5e86686c32f21e8ea86d0aa0b435119744ec4f3ce29d3993e1ac9"
     end
     on_intel do
       url "https://seawater.io/releases/morey-0.2.0-linux-x86_64.tar.gz"
-      sha256 "273092bd0b93b25a50bf1b85c4304a85904a47adce49fb6ae13c4290dac47f6a"
+      sha256 "de2202aa04c0e6a749480c521f9419379735ea7cfb5891730a41a26ef9f5510d"
     end
   end
 
