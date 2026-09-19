@@ -1,28 +1,28 @@
 class Morey < Formula
   desc "Compiled governance daemon for AI agents — Morey by Seawater"
   homepage "https://seawater.io/morey/"
-  version "0.2.0"
+  version "0.3.0"
   license :cannot_represent  # LicenseRef-Proprietary
 
   on_macos do
     on_arm do
-      url "https://seawater.io/releases/morey-0.2.0-darwin-arm64.tar.gz"
-      sha256 "9774fba1374c03c590772530c149ec1f77ba5049151532c69cc14632bacf11d4"
+      url "https://github.com/Equilateral-AI/morey-releases/releases/download/v0.3.0/morey-0.3.0-darwin-arm64.tar.gz"
+      sha256 "08cc668775acdacbde1d0f93836e3622639aab0d502c1840d9a43a04ba1c20fd"
     end
     on_intel do
-      url "https://seawater.io/releases/morey-0.2.0-darwin-x86_64.tar.gz"
-      sha256 "00cd8f4c0e38f452aba9a66d8f3a8e88276056cef8de1e239a7d0b415e9174b3"
+      url "https://github.com/Equilateral-AI/morey-releases/releases/download/v0.3.0/morey-0.3.0-darwin-x86_64.tar.gz"
+      sha256 "52db76313b2c95e457412623d8d577d8b0cbc91e3d3cde009f2ab9b20b09a2d8"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://seawater.io/releases/morey-0.2.0-linux-arm64.tar.gz"
-      sha256 "bcfd6d3dcee5e86686c32f21e8ea86d0aa0b435119744ec4f3ce29d3993e1ac9"
+      url "https://github.com/Equilateral-AI/morey-releases/releases/download/v0.3.0/morey-0.3.0-linux-arm64.tar.gz"
+      sha256 "73e5d2ec277cfb7813ffdccb3024105e206f29c9d13395d2135ac29bcf78baae"
     end
     on_intel do
-      url "https://seawater.io/releases/morey-0.2.0-linux-x86_64.tar.gz"
-      sha256 "de2202aa04c0e6a749480c521f9419379735ea7cfb5891730a41a26ef9f5510d"
+      url "https://github.com/Equilateral-AI/morey-releases/releases/download/v0.3.0/morey-0.3.0-linux-x86_64.tar.gz"
+      sha256 "f9a678e5324fb193d5d01469434374e2a5b824915c18d01c7fa2c4f20539948a"
     end
   end
 
