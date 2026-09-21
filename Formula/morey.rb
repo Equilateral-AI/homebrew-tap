@@ -1,33 +1,35 @@
 class Morey < Formula
   desc "Compiled governance daemon for AI agents — Morey by Seawater"
   homepage "https://seawater.io/morey/"
-  version "0.3.0"
+  version "0.3.1"
   license :cannot_represent  # LicenseRef-Proprietary
 
   on_macos do
     on_arm do
-      url "https://github.com/Equilateral-AI/morey-releases/releases/download/v0.3.0/morey-0.3.0-darwin-arm64.tar.gz"
-      sha256 "96c7146e7e89c43b5a0a69972e1329f3d1311d4f68bab32e21dd0034959d1e86"
+      url "https://github.com/Equilateral-AI/morey-releases/releases/download/v0.3.1/morey-0.3.1-darwin-arm64.tar.gz"
+      sha256 "86210762802e38dc8029887b5a35e06e3304dcf68ae289d08239d7490abdfbd5"
     end
     on_intel do
-      url "https://github.com/Equilateral-AI/morey-releases/releases/download/v0.3.0/morey-0.3.0-darwin-x86_64.tar.gz"
-      sha256 "15799affe51f3d46582b849aa709fa7fea460dd9652a7f232512194661b2b450"
+      url "https://github.com/Equilateral-AI/morey-releases/releases/download/v0.3.1/morey-0.3.1-darwin-x86_64.tar.gz"
+      sha256 "d4207411602496eff74257b544c713db670d4746a3f94d770b553deb59db484a"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Equilateral-AI/morey-releases/releases/download/v0.3.0/morey-0.3.0-linux-arm64.tar.gz"
-      sha256 "f3762177c6155950abbdc8b8c17266a1eb89058eefff776cd4cf3bd9e6bcdbca"
+      url "https://github.com/Equilateral-AI/morey-releases/releases/download/v0.3.1/morey-0.3.1-linux-arm64.tar.gz"
+      sha256 "1639ec2ee92dd86e36ea57b2c91d6b78462f73543e05f0fb7aa6c59d93e98add"
     end
     on_intel do
-      url "https://github.com/Equilateral-AI/morey-releases/releases/download/v0.3.0/morey-0.3.0-linux-x86_64.tar.gz"
-      sha256 "e09cc824f2583d3a63ca81b066809c7f1dbfa013763e7ce2ef2fc31fb8f3fd5c"
+      url "https://github.com/Equilateral-AI/morey-releases/releases/download/v0.3.1/morey-0.3.1-linux-x86_64.tar.gz"
+      sha256 "af9e101061c5bfce51584b379ccff411087a5d1ebc58b7134495a152d862d087"
     end
   end
 
   def install
     bin.install "morey"
+    bin.install "morey-test-inject"
+    bin.install "morey-test-verify"
   end
 
   test do
